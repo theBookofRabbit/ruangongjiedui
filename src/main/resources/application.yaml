@@ -1,0 +1,4 @@
+server:
+  port: 81
+  tomcat:
+    uri-encoding: UTF-8

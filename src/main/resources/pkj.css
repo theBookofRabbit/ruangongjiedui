@@ -1,0 +1,148 @@
+body {
+  /* width: 1920px; */
+  height: 100vh;
+  background: linear-gradient(
+    125deg,
+    #2c3e50,
+    #27ae60,
+    #2980b9,
+    #e74c3c,
+    #8e44ad
+  );
+  background-size: 400%;
+  animation: bg 20s ease infinite;
+}
+
+a {
+  width: 150px;
+  display: inline-block;
+  color: #ffffff;
+  text-decoration: none;
+  position: relative;
+  top: 10px;
+  left: 20px;
+
+  font-weight: 700;
+  font-size: 24px;
+}
+
+@keyframes bg {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.formarea .formself {
+  border-radius: 300px;
+  width: 500px;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0);
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: all 1s;
+}
+/* .formarea .formself {
+  
+} */
+.formarea .formself:hover {
+  border-radius: 40px;
+  background: rgba(0, 0, 0, 0.6);
+}
+.formarea .formself .inp {
+  border: 2px solid #3498db;
+  background: none;
+  display: block;
+  margin: 40px auto;
+  text-align: center;
+  padding: 16px 10px;
+  width: 160px;
+  height: 40px;
+  outline: none;
+  color: white;
+  border-radius: 40px;
+  transition: all 0.5s;
+  font-size: 20px;
+  font-weight: 700;
+}
+.formarea .formself .inp:focus,
+.formarea .formself .inp:invalid {
+  width: 400px;
+  border-color: hotpink;
+}
+/* .formarea .formself .inp:invalid {
+    width: 400px;
+    border-color: hotpink;
+  } */
+.formarea .formself .inp:hover {
+  box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.8);
+}
+.formarea .formself .bingo {
+  z-index: 99;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  border: 2px solid #ffffff;
+  background: transparent;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 30px;
+  transition: all 1s;
+}
+.formarea .formself .bingo:hover {
+  background-color: #34db8d;
+}
+.formarea .formself .bingo:focus {
+  outline: none;
+}
+div[class^="wave"] {
+  /* 确保波纹在父盒子city正中，放大后就向四周扩散 */
+  position: absolute;
+  top: 455px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  box-shadow: 0px 0px 20px #ffffff;
+  border-radius: 50%;
+  animation: wave 1.5s linear infinite;
+  z-index: -1;
+}
+div.wave2 {
+  animation-delay: 0.4s;
+}
+
+div.wave3 {
+  animation-delay: 0.8s;
+}
+@keyframes wave {
+  0% {
+  }
+
+  70% {
+    /* 变大效果不使用scale是因为他会同时放大阴影，影响效果 */
+    width: 140px;
+    height: 140px;
+    opacity: 1;
+  }
+
+  100% {
+    width: 160px;
+    height: 160px;
+    opacity: 0;
+  }
+}
