@@ -40,7 +40,7 @@ public class Configure implements WebMvcConfigurer {
                 .title("结对编程接口文档")
                 .description("正如你所见，这是一份简陋的swagger接口文档。")
                 .version("1.0.0") // 版本号
-                .contact(new Contact("小小", "https://www.cnblogs.com/dayixinsheng/", "3172864829@qq.com")) // 联系人
+                .contact(new Contact("pkj", "https://www.cnblogs.com/dayixinsheng/", "3172864829@qq.com")) // 联系人
                 .build();
     }
 }
